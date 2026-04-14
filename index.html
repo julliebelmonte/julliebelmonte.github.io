@@ -67,7 +67,7 @@
   /* SKILLS */
   .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:3rem}
   .skill-card{border:1px solid rgba(201,168,76,0.15);padding:1.8rem;position:relative;transition:border-color 0.3s}
-  .skill-card:hover{border-color:rgba(201,168,76,0.45)}
+  .skill-card:hover{border-color:var(--marfim-3)}
   .skill-card::before{content:'';position:absolute;top:0;left:0;width:2rem;height:1px;background:var(--marsala)}
   .skill-cat{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--marsala);margin-bottom:1rem}
   .skill-tools{display:flex;flex-wrap:wrap;gap:0.5rem}
@@ -145,10 +145,10 @@
     <p class="hero-tagline">Cientista de dados com foco em Machine Learning e IA transformando dados em decisões.</p>
     <div class="hero-tags">
       <span class="tag">Machine Learning</span>
-      <span class="tag">LLMs & RAG</span>
-      <span class="tag">Power BI</span>
+      <span class="tag">Inteligência Artificial</span>
       <span class="tag">Python</span>
       <span class="tag">SQL</span>
+      <span class="tag">Deep Learning</span>
     </div>
     <div class="hero-cta">
       <a href="#projetos" class="btn-primary">Ver Projetos</a>
@@ -162,6 +162,22 @@
   <div class="section-label" data-num="01">Sobre</div>
   <div class="about-grid">
     <div class="about-aside">
+      <div style="margin-bottom:2.5rem">
+  <img
+    src="jullie.png"
+    alt="Jullie Belmonte"
+    style="
+      width: 100%;
+      max-width: 240px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid rgba(181,64,74,0.35);
+      display: block;
+      margin: 0 auto;
+    "
+  />
+</div>
       <div class="about-stat">
         <div class="stat-num">4+</div>
         <div class="stat-label">Anos de experiência</div>
@@ -174,9 +190,10 @@
     <div class="about-body">
       <h2 class="section-title" style="font-size:1.8rem;margin-bottom:1.5rem">De pedagoga a<br><em style="color:var(--marsala)">cientista de dados.</em></h2>
       <div class="divider"></div>
-      <p>Cientista de dados com <span class="highlight-text">4 anos de experiência</span>, atuando principalmente com Python, SQL e Machine Learning em projetos de <span class="highlight-text">alto impacto social</span> nas áreas de Educação, Saúde e Segurança Pública.</p>
-      <p>Minha trajetória foi construída com intencionalidade: da Pedagogia à Computação, consolidando a transição por meio de cursos, bootcamps e hackathons. Hoje sou mestranda em Ciência da Computação no CEFET/RJ, desenvolvendo pesquisas que unem dados e educação.</p>
-      <p>Em 2022, como Analista de Dados, desenvolvi dashboards, relatórios, integrações via API e processos de ETL, além de gerenciar ambientes no <span class="highlight-text">Google Cloud Platform (BigQuery)</span>. Em 2024, como Cientista de Dados em consultoria voltada a órgãos públicos, trabalhei com modelos preditivos e soluções com <span class="highlight-text">OCR, NER e RAG com LLMs</span> para automação de documentos.</p>
+      <p>Cientista de dados com 4 anos de experiência, atuando principalmente com Python, SQL e Machine Learning em projetos de <span class="highlight-text">alto impacto social</span> nas áreas de Educação, Saúde e Segurança Pública.</p>
+      <p>Minha trajetória foi construída com intencionalidade: da Pedagogia à Computação, consolidando a transição por meio de cursos, bootcamps e hackathons. Hoje sou <span class="highlight-text">mestranda em Ciência da Computação</span> no CEFET/RJ, desenvolvendo pesquisas que unem dados e educação.</p>
+      <p>Em 2022, como Analista de Dados, desenvolvi dashboards, relatórios, integrações via API e processos de ETL, além de gerenciar ambientes no Google Cloud Platform (BigQuery). 
+        Em 2024, como Cientista de Dados em uma consultoria que atua com órgãos públicos, trabalhei com modelos preditivos e soluções com OCR, NER e RAG com LLMs para automação de documentos.</p>
       <p>Também atuo voluntariamente na comunidade <span class="highlight-text">Data Girls</span>, contribuindo para um ecossistema de dados mais diverso e inclusivo.</p>
     </div>
   </div>
@@ -186,77 +203,58 @@
 <section id="skills" style="padding:5rem 4rem">
   <div class="section-label" data-num="02">Ferramentas & Habilidades</div>
   <div class="skills-grid">
+
     <div class="skill-card">
       <div class="skill-cat">Machine Learning</div>
       <div class="skill-tools">
-        <span class="skill-tool">Scikit-learn</span>
-        <span class="skill-tool">TensorFlow</span>
-        <span class="skill-tool">PyTorch</span>
-        <span class="skill-tool">XGBoost</span>
+        <span class="skill-tool">Modelagem supervisionada e não supervisionada</span>
+        <span class="skill-tool">Regressão, Random Forest, Gradient Boosting, Clustering</span>
+        <span class="skill-tool">Feature Engineering e Seleção de variáveis</span>
+        <span class="skill-tool">Tuning de hiperparâmetros</span>
+        <span class="skill-tool">Validação cruzada e Avaliação de modelos</span>
+        <span class="skill-tool">Interpretabilidade e Explicabilidade (SHAP, LIME)</span>
       </div>
     </div>
+
     <div class="skill-card">
       <div class="skill-cat">LLMs & NLP</div>
       <div class="skill-tools">
-        <span class="skill-tool">RAG</span>
-        <span class="skill-tool">NER</span>
-        <span class="skill-tool">OCR</span>
-        <span class="skill-tool">LangChain</span>
-        <span class="skill-tool">HuggingFace</span>
+        <span class="skill-tool">Deep Learning (Redes Neurais, Transformers, Hugging Face)</span>
+        <span class="skill-tool">RAG (Geração Aumentada por Recuperação)</span>
+        <span class="skill-tool">NER (Reconhecimento de Entidades Nomeadas)</span>
+        <span class="skill-tool">OCR (Reconhecimento ótico de caracteres)</span>
       </div>
     </div>
+
     <div class="skill-card">
-      <div class="skill-cat">Análise & Dados</div>
+      <div class="skill-cat">Dados & Cloud</div>
       <div class="skill-tools">
         <span class="skill-tool">Python</span>
-        <span class="skill-tool">Pandas</span>
         <span class="skill-tool">SQL</span>
+        <span class="skill-tool">ETL / ELT</span>
+        <span class="skill-tool">APIs</span>
+        <span class="skill-tool">Google Cloud Platform</span>
         <span class="skill-tool">BigQuery</span>
       </div>
     </div>
+
     <div class="skill-card">
-      <div class="skill-cat">Business Intelligence</div>
+      <div class="skill-cat">BI & Visualização</div>
       <div class="skill-tools">
         <span class="skill-tool">Power BI</span>
         <span class="skill-tool">Looker</span>
+        <span class="skill-tool">Plotly</span>
       </div>
     </div>
-    <div class="skill-card">
-      <div class="skill-cat">Engenharia & Cloud</div>
-      <div class="skill-tools">
-        <span class="skill-tool">GCP</span>
-        <span class="skill-tool">ETL</span>
-        <span class="skill-tool">APIs REST</span>
-        <span class="skill-tool">Git</span>
-      </div>
-    </div>
+
   </div>
 </section>
 
 <!-- PROJETOS -->
 <section class="projects" id="projetos">
-  <div class="section-label" data-num="03">Projetos</div>
-  <h2 class="section-title" style="margin-bottom:3rem">Soluções que<br><em style="color:var(--marsala)">geram impacto.</em></h2>
-  <div class="projects-grid">
-
-      <div class="project-card">
-      <span class="project-num">01</span>
-      <div class="project-area">Automação de Documentos</div>
-      <h3 class="project-title">Pipeline RAG com LLMs para Extração em Documentos</h3>
-      <p class="project-desc">Este estudo realiza uma análise longitudinal e explicável das desigualdades de gênero na Ciência de Dados a partir dos dados do State of Data Brazil entre 2021 e 2024 combinando modelos de aprendizado de máquina com técnicas de Inteligência Artificial Explicável (XAI).</p>
-      <div class="project-tags">
-        <span class="project-tag">Python</span>
-        <span class="project-tag">Scikit-learn</span>
-        <span class="project-tag">XAI</span>
-        <span class="project-tag">Logistic Regression</span>
-        <span class="project-tag">Random Forest</span>
-        <span class="project-tag">XGBoost</span> 
-      </div>
-      <a href="https://github.com/julliebelmonte/wit2026" class="project-link" target="_blank">Ver no GitHub</a>
-    </div>
-
+    
     <div class="project-card">
-      <span class="project-num">02</span>
+      <span class="project-num">01</span>
       <div class="project-area">Mulheres na Ciência de Dados</div>
       <h3 class="project-title">Análise de Dados Longitudinais State Of Data</h3>
       <p class="project-desc">Este estudo analisa a evolução da presença feminina no setor no Brasil com base nos dados das pesquisas State of Data Brazil entre 2021 e 2023. A investigação considera variáveis como distribuição salarial, senioridade, experiência e ocupação de liderança. Os resultados apontam avanços graduais da participação feminina, mas destacam desigualdades persistentes, especialmente no acesso a posições estratégicas.</p>
@@ -266,7 +264,7 @@
         <span class="project-tag">Plotly</span>
         <span class="project-tag">Estatística</span>
       </div>
-      <a href="https://github.com/julliebelmonte/wit2025" class="project-link" target="_blank">Ver no GitHub</a>
+      <a href="https://github.com/julliebelmonte/stateofdata" class="project-link" target="_blank">Ver no GitHub</a>
     </div>
 
 
@@ -282,32 +280,73 @@
       <div class="timeline-year">2024 — 2026</div>
       <div class="timeline-role">Cientista de Dados</div>
       <div class="timeline-org">Vert Analytics</div>
-      <p class="timeline-desc">Projetos de alto impacto social com modelos preditivos e soluções com OCR, NER e RAG com LLMs para automação e extração de informações em documentos de órgãos públicos.</p>
+       <p class="timeline-desc">
+    Desenvolvimento de soluções de NLP e IA para órgãos públicos, incluindo NER, classificação de textos e QA com transformers. <br><br>
+    Implementação de pipelines com RAG, embeddings e bases vetoriais (ChromaDB) para extração e recuperação de informações em larga escala. <br><br> 
+    Projetos aplicados em segurança, saúde e educação, com automação de processos e redução significativa de esforço manual. <br><br>
+  </p>
     </div>
      <div class="timeline-item">
       <div class="timeline-year">2024 — 2026</div>
-      <div class="timeline-role">Mestranda em Ciência da Computação</div>
+      <div class="timeline-role">Mestrado em Ciência da Computação</div>
       <div class="timeline-org">CEFET/RJ</div>
-      <p class="timeline-desc">Pesquisa aplicada na interseção entre Computação e Educação, utilizando análise de dados e Machine Learning para geração de insights educacionais.</p>
+      <p class="timeline-desc">Programa de pós-graduação em Ciência da Computação com foco em Ciência de Dados.</p>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2022 — 2024</div>
       <div class="timeline-role">Analista de Dados</div>
       <div class="timeline-org">Estante Mágica</div>
-      <p class="timeline-desc">Desenvolvimento de dashboards, relatórios, integrações via API e processos de ETL, além de gerenciamento do ambiente Google Cloud Platform (BigQuery).</p>
+      <p class="timeline-desc">
+  Construção de pipelines ETL (bronze/silver/gold) e Data Lake em BigQuery, integrando PostgreSQL e MySQL. <br><br>
+  Automação de processos com Python e SQL para garantir qualidade e escalabilidade dos dados. <br><br>
+  Geração de insights e dashboards para áreas estratégicas, contribuindo para +55% de crescimento anual. <br><br>
+</p>
     </div>
- 
+    <div class="timeline-item">
+        <div class="timeline-year">2021 — 2022</div>
+        <div class="timeline-role">Especialização em Ciência de Dados</div>
+        <div class="timeline-org">Santander Coders</div>
+        <p class="timeline-desc">Bootcamp intensivo de 6 meses focado em Python, SQL, Estatística e Machine Learning.</p>
+      </div>
+
+  </div>
+</section>
+
+
+<!-- DATA GIRLS -->
+<section id="datagirls" style="padding:6rem 4rem;background:var(--ink-2);border-top:1px solid rgba(201,168,76,0.1)">
+  <div class="section-label" data-num="05">Comunidade</div>
+  <h2 class="section-title" style="margin-bottom:1rem">Data Girls</h2>
+  <p style="font-size:0.95rem;color:var(--marfim-2);line-height:1.9;max-width:620px;margin-bottom:3rem">
+    Comunidade de mulheres com o objetivo de empoderar e fortalecer mulheres na área de tecnologia, com foco em Data Science e Inteligência Artificial. <br> <br>
+    Colaboro na criação de conteúdos e estudos, além da organização de treinamentos e workshops.
+  </p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem">
+    
+    <div style="position:relative;overflow:hidden;border:1px solid rgba(201,168,76,0.15)">
+      <img src="google.jpeg" alt="Data Girls — Evento Google" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block"/>
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:1rem 1.2rem;background:linear-gradient(to top,rgba(26,15,15,0.9),transparent)">
+        <span style="font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--marsala)">Google</span>
+      </div>
+    </div>
+
+    <div style="position:relative;overflow:hidden;border:1px solid rgba(201,168,76,0.15)">
+      <img src="microsoft.jpg" alt="Data Girls — Evento Microsoft" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block"/>
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:1rem 1.2rem;background:linear-gradient(to top,rgba(26,15,15,0.9),transparent)">
+        <span style="font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--marsala)">Microsoft</span>
+      </div>
+    </div>
 
   </div>
 </section>
 
 <!-- CONTATO -->
 <section class="contact" id="contato">
-  <div class="section-label" data-num="05" style="justify-content:center">Contato</div>
+  <div class="section-label" data-num="06" style="justify-content:center">Contato</div>
   <h2 class="section-title">Vamos conversar?</h2>
   <p class="contact-subtitle">Aberta a projetos, parcerias e oportunidades que gerem impacto real.</p>
   <div class="contact-links">
-    <!-- Substitua pelos seus dados reais -->
+    
     <a href="mailto:jullie.bel.aguiar@gmail.com" class="contact-link">
       <div class="contact-icon">@</div>
       Email
@@ -324,8 +363,8 @@
 </section>
 
 <footer>
-  <span class="footer-brand">Jullie Belmonte</span>
-  <p>© 2026 — Feito com propósito e dados.</p>
+  <span class="footer-brand">Jullie Belmonte de Aguiar</span>
+  <p>© 2026</p>
 </footer>
 
 </body>
