@@ -208,6 +208,8 @@
 <!-- SKILLS -->
 <section id="skills" style="padding:5rem 4rem">
   <div class="section-label" data-num="02">Ferramentas & Habilidades</div>
+  <h2 class="section-title" style="margin-bottom:3rem">Competências</h2>
+  
   <div class="skills-grid">
 
     <div class="skill-card">
@@ -256,6 +258,46 @@
 
   </div>
 </section>
+
+<style>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.skill-card {
+  border: 1px solid rgba(217, 122, 101, 0.2);
+  padding: 2rem;
+}
+
+.skill-cat {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #d97a65;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+}
+
+.skill-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-tool {
+  font-size: 0.80rem;
+  line-height: 1.6;
+  color: #cdb89d;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 <!-- PROJETOS -->
 <section class="projects" id="projetos">
@@ -319,7 +361,7 @@
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-year">2026 — atual</div>
-      <div class="timeline-role">Cientista de dados Pleno</div>
+      <div class="timeline-role">Cientista de Dados Pleno</div>
       <div class="timeline-org">Koin</div>
       <p class="timeline-desc">Atuo na análise de dados e desenvolvimento de modelos de machine learning para otimização de processos e tomada de decisão.</p>
     </div>
